@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo img {
+  
+  margin-left: 339px;
+  width: 40px; /* Adjust as needed */
+  height: auto;
+}
+
+.Nlinks {
+  margin-right: 340px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-style: Arial;
+}
+
+.e-link {
+  margin-right: 49px;
+  color:#4cc0e0;;
+ 
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.white-link {
+  margin-right: 10px;
+  color: white;
+  
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.separator {
+  color: white;
+  margin: 0 5px;
+}
+
+
+
+
+
+
+
+/* 1st Banner */
+.section {
+  background-color:#60acc5;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.image {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.content {
+  flex: 1;
+}
+
+.white-text {
+  color: white;
+  font-size: 48px;
+
+}
+
+black-paragraph{
+  color: black;
+  font-size: 18px;
+}
+
+.info-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+/*Second Banner*/
+.banner {
+  background-color: rgb(224, 224, 234);
+  text-align: center;
+  padding: 40px 0;
+}
+
+.banner-text {
+  margin: 600%;
+  font-size: 48px;
+  color:#676f75; 
+  font-size: Arial;
+}
+
+/* Center the "Our Services" h1 */
+.centered-h1 {
+  text-align: center;
+  color: gray;
+}
+
+
+
+
+
+.banner {
+  background-color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.service-column {
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.service-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.service-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.info-button-blue {
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-button-blue:hover {
+  background-color: #005f8d;
+}
+
+
+
+
+/*  Footer */
+.container{
+background-color: white;
+padding: 100;
+}
+
+.footer {
+background-color: white;
+color: grey;
+text-align: center;
+padding: 20px 0;
+}
+
+.footer .copyright {
+font-size: 14px;
+margin: 0;
+}
