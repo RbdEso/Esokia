@@ -1,196 +1,200 @@
+*
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+
 }
 
-.navbar {
-  background-color: black;
+.header {
+  background-color: #161b1d;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  max-width: 1600px;
+  min-height: 90px;
 }
 
-.logo img {
+
+.button{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;  
+}
+
+
+.info-button{
+  background-color: black;
+  color: white;
+  padding: 13px 46px;
+  margin: 40px 0 68px 0;
+  font-size: 18px;
+  }
   
-  margin-left: 339px;
-  width: 40px; /* Adjust as needed */
+
+.logo img {
+  width: 134px;
   height: auto;
 }
 
 .Nlinks {
-  margin-right: 340px;
   display: flex;
   align-items: center;
   font-size: 14px;
   font-style: Arial;
 }
 
-.e-link {
-  margin-right: 49px;
-  color:#4cc0e0;;
- 
-  text-decoration: none;
-  margin-right: 10px;
-}
 
 .white-link {
-  margin-right: 10px;
+
   color: white;
-  
   text-decoration: none;
-  margin-right: 10px;
 }
 
-.separator {
-  color: white;
-  margin: 0 5px;
+.active-trail {
+  color: #4cc0e0;
 }
 
 
-
-
-
-
-
-/* 1st Banner */
-.section {
-  background-color:#60acc5;
+.menu-main {
   display: flex;
-  align-items: center;
-  padding: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.image {
-  flex: 1;
-  padding-right: 20px;
+.menu-main li {
+  padding: 0 20px;
+  position: relative;
+
 }
 
-.image img {
-  max-width: 100%;
-  height: auto;
-  
-}
-
-.content {
-  flex: 1;
-}
-
-.white-text {
+.menu-main li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  top: 0;
   color: white;
-  font-size: 48px;
-
 }
 
-black-paragraph{
-  color: black;
+
+.flex {
+  display: flex;
+}
+
+.header-inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/*Phone Section*/
+
+
+.banner {
+  background-color: #5aa3bb;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1600px;
+  min-height: 471px;
+}
+
+.banner-inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.banner-image {
+  flex: 1;
+  margin: 0 40px;
+}
+
+.banner-image img{
+  display: block;
+}
+
+.banner-content {
+  flex: 1;
+}
+
+.color-white{
+  color: white;
+}
+
+
+.heading-1 {
+ font-size: 48px;
+}
+
+.paragraph-1{
   font-size: 18px;
 }
 
-.info-button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-
-/*Second Banner*/
-.banner {
-  background-color: rgb(224, 224, 234);
-  text-align: center;
-  padding: 40px 0;
-}
-
-.banner-text {
-  margin: 600%;
-  font-size: 48px;
-  color:#676f75; 
-  font-size: Arial;
-}
-
-/* Center the "Our Services" h1 */
-.centered-h1 {
-  text-align: center;
-  color: gray;
+.color-black{
+  color: black;
 }
 
 
 
 
 
-.banner {
+
+
+/*  Our Services */
+
+.sercon .white-text{
+  color: black;
+}
+.service {
   background-color: white;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.service-container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 40px;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1600px;
+  min-height: 471px;
 }
 
-.service-column {
-  padding: 0 10px;
-  box-sizing: border-box;
-  text-align: center;
-}
 
-.service-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.service-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.service-content h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.info-button-blue {
-  background-color: #0077b5;
+.service-info-button{
+  font-size: 18px;
   color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color:#4ec1e0;
+  margin: 40px 0 68px 0;
+  padding: 13px 46px;
 }
-
-.info-button-blue:hover {
-  background-color: #005f8d;
-}
-
-
-
 
 /*  Footer */
-.container{
-background-color: white;
-padding: 100;
-}
 
 .footer {
-background-color: white;
-color: grey;
-text-align: center;
-padding: 20px 0;
+  background-color: white;
+  color: grey;
+  text-align: center;
+  padding: 20px 0;
 }
 
+
 .footer .copyright {
-font-size: 14px;
-margin: 0;
+  font-size: 14px;
+  margin: 0;
+
 }
+
+
+
