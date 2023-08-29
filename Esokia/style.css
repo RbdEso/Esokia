@@ -1,0 +1,200 @@
+*
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.header {
+  background-color: #161b1d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  min-height: 90px;
+}
+
+
+.button{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;  
+}
+
+
+.info-button{
+  background-color: black;
+  color: white;
+  padding: 13px 46px;
+  margin: 40px 0 68px 0;
+  font-size: 18px;
+  }
+  
+
+.logo img {
+  width: 134px;
+  height: auto;
+}
+
+.Nlinks {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-style: Arial;
+}
+
+
+.white-link {
+
+  color: white;
+  text-decoration: none;
+}
+
+.active-trail {
+  color: #4cc0e0;
+}
+
+
+.menu-main {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main li {
+  padding: 0 20px;
+  position: relative;
+
+}
+
+.menu-main li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.header-inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/*Phone Section*/
+
+
+.banner {
+  background-color: #5aa3bb;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1600px;
+  min-height: 471px;
+}
+
+.banner-inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.banner-image {
+  flex: 1;
+  margin: 0 40px;
+}
+
+.banner-image img{
+  display: block;
+}
+
+.banner-content {
+  flex: 1;
+}
+
+.color-white{
+  color: white;
+}
+
+
+.heading-1 {
+ font-size: 48px;
+}
+
+.paragraph-1{
+  font-size: 18px;
+}
+
+.color-black{
+  color: black;
+}
+
+
+
+
+
+
+
+/*  Our Services */
+
+.sercon .white-text{
+  color: black;
+}
+.service {
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 1600px;
+  min-height: 471px;
+}
+
+
+.service-info-button{
+  font-size: 18px;
+  color: white;
+  background-color:#4ec1e0;
+  margin: 40px 0 68px 0;
+  padding: 13px 46px;
+}
+
+/*  Footer */
+
+.footer {
+  background-color: white;
+  color: grey;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.footer .copyright {
+  font-size: 14px;
+  margin: 0;
+
+}
+
+
+
