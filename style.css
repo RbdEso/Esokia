@@ -1,4 +1,5 @@
-* *:before,
+*,
+*:before,
 *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -42,7 +43,10 @@ body {
   margin: 40px 0 68px 0;
   font-size: 18px;
   padding: 14px 50px 14px 48px;
+  text-align: center;
 }
+
+
 
 
 .logo img {
@@ -113,7 +117,7 @@ body {
 
 
 .banner {
-  background-color: #5aa3bb;
+ background-image: url("Image/Lagence.png");
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -121,10 +125,21 @@ body {
   min-height: 471px;
 }
 
-.banner-inner {
-  justify-content: space-between;
-  align-items: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .banner-image {
@@ -177,11 +192,13 @@ body {
 
 
 .service-info-button {
-  font-size: 18px;
+  font-size: 14px;
   color: white;
   background-color: #4ec1e0;
-  margin: 32px 0 0 0;
+  margin: 33px 0 33px 0;
   padding: 11px 34px 9px 37px;
+  max-width: 135px;
+
 }
 
 
@@ -231,7 +248,7 @@ body {
   background-color: #69b2dc;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 13x 45px 0 35px;
   cursor: pointer;
 }
 
@@ -270,15 +287,11 @@ body {
 
 /* Contactez-Nous */
 
-
 .contact-banner {
-background-image: url("Image/Bckground-image.png");
-background: rgba(177, 179, 180, 0.9);
 
-padding: 50px 0;
+  padding: 50px 0;
 }
 
- 
 
 .blue-text {
   color: #4ec1e0;
@@ -287,8 +300,15 @@ padding: 50px 0;
 .contact-paragraph {
   color: white;
   font-size: 0 auto;
-  font-family: Arial, sans-serif;
+
+  font-style: italic;
   margin: 10px 0;
+  width: 100%;
+  max-width: 726px;
+  text-align: center;
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 
@@ -315,7 +335,7 @@ padding: 50px 0;
 
 .form-row label {
   width: 100%;
-  color: #676f75;
+  color: white;
   flex: 0 0 100px;
   max-width: 100px;
   text-align: right;
@@ -328,7 +348,14 @@ padding: 50px 0;
   max-width: calc(100% - 100px);
   padding: 10px;
   flex: 0 0 calc(100% - 100px);
+
+
 }
+
+.form-row textarea {
+  resize: none;
+}
+
 
 .submit-button {
   background-color: #7fb618;
@@ -336,4 +363,48 @@ padding: 50px 0;
   padding: 18px 80px 17px 74px;
   border: none;
   cursor: pointer;
+
+
+}
+
+.form-submit {
+  width: 100%;
+  max-width: calc(100% - 100px);
+  padding: 10px;
+  margin-left: 100px;
+
+}
+
+/*Overlay Image*/
+
+.contact-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 240, 240, 0.5);
+  z-index: 1;
+}
+
+.contact-banner img {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.contact-banner__inner {
+  z-index: 1;
+  position: relative;
 }
